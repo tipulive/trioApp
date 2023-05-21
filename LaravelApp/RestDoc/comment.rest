@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:8000/api
+
+### Save Comment API
+POST  {{baseUrl}}/saveComment/
+Content-Type: application/json
+
+{
+"name": "test",
+"email": "test@gmail.com",
+"comment":"testvn"
+}
+
+### READ Comment API
+GET  {{baseUrl}}/readComment/
+Content-Type: application/json
+
+
+### SEARCH Comment API
+GET  {{baseUrl}}/searchComment/
+Content-Type: application/json
+
+{
+"search": "test@gmail.com",
+
+}
+

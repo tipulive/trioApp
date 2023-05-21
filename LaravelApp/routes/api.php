@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::post('saveComment', 'App\Http\Controllers\CommentController@saveComment');
+Route::get('readComment', 'App\Http\Controllers\CommentController@readComment');
+Route::get('searchComment', 'App\Http\Controllers\CommentController@searchComment');
+
