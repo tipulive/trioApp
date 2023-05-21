@@ -77,7 +77,7 @@ $data = array(
 	'comment' =>$comment_data['comment_content']
 );
 
-$response = wp_remote_post('http://localhost:8000/api/saveComment', array(
+$response = wp_remote_post('http://localhost:8000/api/saveComment', array( //please change this link with your laravel data API
     'method' => 'POST',
     'headers' => array(
         'Content-Type' => 'application/json',
