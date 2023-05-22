@@ -59,7 +59,7 @@ $dataLimit=$request->input("dataLimit")??10; // data limit to be shown
 
 
 
-   $check=DB::select('select *from comments order by id limit :limit offset :offset',array('limit'=>$dataLimit,'offset'=>$startFrom));
+   $check=DB::select('select *from comments order by id desc limit :limit offset :offset',array('limit'=>$dataLimit,'offset'=>$startFrom));
 
    if($check)
    {
